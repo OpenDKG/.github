@@ -6,6 +6,8 @@ Welcome to OpenDKG. These contribution guidelines are the **organization default
 
 Read our [Contributor Agreement](https://github.com/OpenDKG/.github/blob/main/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/main/GOVERNANCE.md) and [DCO](https://github.com/OpenDKG/.github/blob/main/DCO.md).
 
+**Founders:** The three original equal OpenDKG cofounders, including `@a-51-50`, record their initial agreement through [Issue #3](https://github.com/OpenDKG/.github/issues/3), even before joining the organization. Ordinary future members use the [membership procedure](MEMBERSHIP.md). Founder status is not conferred by requesting membership.
+
 ## Before your first contribution
 
 1. Check the specific repository's `LICENSE`, `README`, third-party notices, and any special rules. If its license differs from Apache-2.0, obtain explicit permission to submit under the stated license.
