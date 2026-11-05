@@ -13,4 +13,4 @@
 
 **Prior acceptance issue or CLA Assistant confirmation (if available):** <!-- Link to a public record; never include private identity data. -->
 
-> **Note:** This checklist is not a legal signature or an automatic enforcement mechanism. The repository's CLA/DCO status checks and maintainer reviews determine merge eligibility. NetPetra is explicitly excluded from OpenDKG policies.
+> **Note:** This checklist is not a legal signature or an automatic enforcement mechanism. The repository's CLA/DCO status checks and maintainer reviews determine merge eligibility.
