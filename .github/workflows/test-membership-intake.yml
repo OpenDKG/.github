@@ -1,0 +1,33 @@
+name: Test OpenDKG membership automation
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/membership-*.mjs'
+      - '.github/workflows/membership-intake.yml'
+      - '.github/workflows/test-membership-intake.yml'
+      - '.github/ISSUE_TEMPLATE/membership-agreement.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/membership-*.mjs'
+      - '.github/workflows/membership-intake.yml'
+      - '.github/workflows/test-membership-intake.yml'
+      - '.github/ISSUE_TEMPLATE/membership-agreement.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run membership validation tests
+        run: node --test scripts/membership-validator.test.mjs
