@@ -1,0 +1,33 @@
+name: Test founder adoption automation
+
+on:
+  pull_request:
+    paths:
+      - '.github/founder-roster.json'
+      - '.github/workflows/founder-adoption.yml'
+      - '.github/workflows/test-founder-adoption.yml'
+      - 'scripts/founder-adoption*.mjs'
+  push:
+    branches: [main]
+    paths:
+      - '.github/founder-roster.json'
+      - '.github/workflows/founder-adoption.yml'
+      - '.github/workflows/test-founder-adoption.yml'
+      - 'scripts/founder-adoption*.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run founder acceptance unit tests
+        run: node --test scripts/founder-adoption-validator.test.mjs
