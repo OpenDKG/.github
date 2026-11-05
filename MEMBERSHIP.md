@@ -1,6 +1,6 @@
 # OpenDKG membership and acceptance procedure
 
-**Status: proposed until the three original equal cofounders each personally accept the v1.0 Governance and Contributor Agreement.** This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG), **excluding NetPetra** even if it is transferred to this organization. It is not a legal-person registration or a guarantee of enforceable e-signatures.
+**Status: proposed until the three original equal cofounders each personally accept the v1.0 Governance and Contributor Agreement.** This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG). It is not a legal-person registration or a guarantee of enforceable e-signatures.
 
 ## Automated intake checks
 
@@ -14,7 +14,7 @@ After each original cofounder accepts, the current technical owner can send that
 
 ## For applicants (future non-founder contributors)
 
-1. Read the **immutable v1.0 revision** of [Contributor Agreement](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/GOVERNANCE.md), [Contribution Guidelines](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/CONTRIBUTING.md), and [DCO](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/DCO.md). Version reference: `2e429d904db1059a678085792ad44f1d732d7ea1`.
+1. Read the **immutable v1.0 revision** of [Contributor Agreement](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/GOVERNANCE.md), [Contribution Guidelines](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTING.md), and [DCO](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/DCO.md). Version reference: `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07`.
 2. From the account that will join OpenDKG, [open the membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) **in OpenDKG/.github** and complete all required consent checkboxes. Pseudonymous public GitHub accounts are allowed.
 3. The membership request is a **public GitHub issue**. Never post legal names, identity documents, emails, tokens, or sensitive information. Do not impersonate another account or submit on somebody else's behalf.
 4. A maintainer reviews the issue; if accepted, an organization owner sends an invitation **after** recording explicit approval. Until then, the applicant has no organization membership or privileged access.
@@ -28,7 +28,7 @@ After each original cofounder accepts, the current technical owner can send that
 2. Confirm the issue was created in **OpenDKG/.github** by the **same GitHub account** seeking access; confirm that all checkbox answers are affirmatively selected and that the agreement version is the pinned revision above. **Issue bodies can be edited**, so record the issue URL, current content and observation time at review. If material consent is ambiguous or was edited, obtain a new unambiguous confirmation from the applicant and preserve the evidence.
 3. Record a maintainer review comment, for example:
 
-   `Membership reviewed: @HANDLE; Agreement v1.0 at 2e429d904db1059a678085792ad44f1d732d7ea1; original issue #NUMBER; review UTC YYYY-MM-DDTHH:MM:SSZ; approval by @REVIEWER; approved role MEMBER; authorization for invite only. This comment does not certify civil identity or rights ownership.`
+   `Membership reviewed: @HANDLE; Agreement v1.0 at d56279b4f3c25dd8f9e68699d61be23a0c7a6b07; original issue #NUMBER; review UTC YYYY-MM-DDTHH:MM:SSZ; approval by @REVIEWER; approved role MEMBER; authorization for invite only. This comment does not certify civil identity or rights ownership.`
 
 4. Obtain the minimum maintainer approvals required by [GOVERNANCE.md](GOVERNANCE.md) for the role/access being granted. In particular, adding owners requires at least two maintainers, per the proposed v1.0 rules.
 5. Only then issue the GitHub invitation. Prefer a normal organization member with **no default write privilege**. Grant per-repository permissions using least privilege; promote to maintain or owner only via the documented governance approval.

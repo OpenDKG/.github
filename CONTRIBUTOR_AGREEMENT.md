@@ -10,8 +10,6 @@
 
 A **Covered Repository** is a repository *owned by the `OpenDKG` GitHub organization* when a contribution is intentionally submitted for inclusion, whether the repository exists now or is created in the future. This agreement is intended to govern contributions to **all current and future Covered Repositories** after a contributor's valid acceptance, without needing a new project-specific agreement for each new repository.
 
-**Express exclusion: NetPetra.** The NetPetra software/project and any repository principally dedicated to it are excluded, even if later transferred to the OpenDKG organization. Inclusion would require a separate, explicit written decision by the maintainers and permission from affected contributors; it is **not** automatic.
-
 The agreement does not govern repositories outside OpenDKG ownership, personal forks, outside employers' code, or material already licensed under other terms merely because it is subsequently copied or transferred into a Covered Repository. Transferring an existing repository to OpenDKG does not retroactively license its history. Each such repository requires an ownership, provenance and license review before inclusion.
 
 ## 2. Who is granting rights
@@ -51,7 +49,7 @@ Before their first contribution under this policy, the contributor must post an 
 
 **Acceptance statement (copy and complete with actual values):**
 
-> I, the GitHub account signing this comment, affirmatively accept **OpenDKG Contributor Agreement v1.0**, at the exact revision linked in this comment, for my authorized contributions to **all current and future Covered Repositories owned by OpenDKG**, excluding **NetPetra**. I understand that valid outbound licenses I grant on accepted contributions cannot be revoked solely because I leave the team. I retain ownership of my original work. My previously submitted work is included **only** if I list the relevant commits or PRs here. Covered earlier work: **none / links**. Agreement revision (commit SHA): **[paste commit]**.
+> I, the GitHub account signing this comment, affirmatively accept **OpenDKG Contributor Agreement v1.0**, at the exact revision linked in this comment, for my authorized contributions to **all current and future Covered Repositories owned by OpenDKG**. I understand that valid outbound licenses I grant on accepted contributions cannot be revoked solely because I leave the team. I retain ownership of my original work. My previously submitted work is included **only** if I list the relevant commits or PRs here. Covered earlier work: **none / links**. Agreement revision (commit SHA): **[paste commit]**.
 
 A DCO `Signed-off-by` trailer is **not** acceptance of this separate agreement. Acceptance of a materially revised agreement requires a new explicit acknowledgment; changed terms cannot retroactively replace prior public licenses. The three original equal cofounders must each personally accept this agreement and record adoption of `GOVERNANCE.md` before the three-person council claims its collective rules are in force. Founding status is not decided by the order of GitHub invitations.
 

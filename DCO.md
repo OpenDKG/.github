@@ -1,6 +1,6 @@
 # Developer Certificate of Origin (DCO)
 
-**For contributions to OpenDKG covered repositories (NetPetra excluded).** The following is the **verbatim Developer's Certificate of Origin 1.1** published by the Linux Foundation at https://developercertificate.org/. The DCO records a contributor's certification of their right to submit work; it is **not itself a copyright assignment, a standalone software license, or acceptance of `CONTRIBUTOR_AGREEMENT.md`**.
+**For contributions to OpenDKG covered repositories.** The following is the **verbatim Developer's Certificate of Origin 1.1** published by the Linux Foundation at https://developercertificate.org/. The DCO records a contributor's certification of their right to submit work; it is **not itself a copyright assignment, a standalone software license, or acceptance of `CONTRIBUTOR_AGREEMENT.md`**.
 
 ## Official DCO 1.1 text (unaltered)
 

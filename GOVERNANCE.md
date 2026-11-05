@@ -1,7 +1,7 @@
 # OpenDKG Governance
 
 **Version:** 1.0 — proposed for adoption  
-**Scope:** OpenDKG GitHub organization and its current and future organization-owned projects, **excluding NetPetra**.
+**Scope:** OpenDKG GitHub organization and its current and future organization-owned projects.
 
 > OpenDKG is presently treated here as an **informal collaboration of individuals**, not a registered company, employer, partnership, or separate legal person. This document sets voluntary operating rules; it does not determine ownership of a personal domain, trademark, bank account, wallet, signing certificate or other asset. It cannot override GitHub's technical permissions or applicable law.
 
@@ -48,7 +48,6 @@ With two remaining active maintainers, require both for official releases and ir
 ## 3. Projects and license rules
 
 - **Coverage:** All repositories owned by `github.com/OpenDKG` now or in the future, subject to a repository-specific written exception.
-- **Permanent named exclusion:** **NetPetra** remains out of scope even if subsequently moved to this organization, until a separately documented agreement expressly includes it and rights-holders consent as needed.
 - **Default outbound software license:** Apache License 2.0; place an actual `LICENSE` in **each** repository. `OpenDKG/.github/LICENSE` does not license other repositories.
 - If a repository uses another license, disclose it clearly **before** accepting contributions and obtain contributor approval for that repository's license. Existing third-party/copyleft or previously licensed material is not automatically relicensed by organizational policy.
 - A newly transferred repository requires a provenance and governance review; this policy cannot retroactively bind its former contributors.

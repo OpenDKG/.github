@@ -2,7 +2,7 @@
 
 This repository contains **organization-wide contribution, governance and licensing guidance** for the volunteer developers collaborating through [OpenDKG](https://github.com/OpenDKG).
 
-**Scope:** All current and future repositories owned by OpenDKG, with **NetPetra explicitly excluded** even if later transferred to OpenDKG (unless separately admitted with necessary permissions). This `.github` repository is itself a covered repository; third-party and previously licensed material retain their original rights.
+**Scope:** Current and future repositories owned by OpenDKG, subject to the published licensing and repository-adoption rules. This `.github` repository is itself a covered repository; third-party and previously licensed material retain their original rights.
 
 ## Documents
 
@@ -46,7 +46,7 @@ OpenDKG uses a **manual pre-invitation membership gate** and a **separate pull-r
 - [CLA Assistant setup](CLA_SETUP.md) — external GitHub authorization and required checks for contributions across covered repositories.
 - [PR template](.github/PULL_REQUEST_TEMPLATE.md) — contributor checklist, not a binding signature.
 
-**Activation requires** adoption by all three founding maintainers and a human owner review before sending invitations. A separate CLA Assistant setup is still needed to gate PR merges. Neither mechanism includes NetPetra.
+**Activation requires** adoption by all three founding maintainers and a human owner review before sending invitations. A separate CLA Assistant setup is still needed to gate PR merges.
 
 ### Source references
 

@@ -11,12 +11,12 @@ body:
         **Only applications filed in [OpenDKG/.github](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) are processed.** This template can also be visible as an organization default in other repositories; do not file there.
 
         **Read these pinned documents before checking any boxes:**
-        - [Contributor Agreement v1.0](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/CONTRIBUTOR_AGREEMENT.md)
-        - [Governance v1.0](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/GOVERNANCE.md)
-        - [Contribution guidelines v1.0](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/CONTRIBUTING.md)
-        - [Developer Certificate of Origin](https://github.com/OpenDKG/.github/blob/2e429d904db1059a678085792ad44f1d732d7ea1/DCO.md)
+        - [Contributor Agreement v1.0](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTOR_AGREEMENT.md)
+        - [Governance v1.0](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/GOVERNANCE.md)
+        - [Contribution guidelines v1.0](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTING.md)
+        - [Developer Certificate of Origin](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/DCO.md)
 
-        **Exact agreement revision:** `2e429d904db1059a678085792ad44f1d732d7ea1`. The forms refer to this specific version, not to future changes. NetPetra is excluded from all coverage.
+        **Exact agreement revision:** `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07`. The forms refer to this specific version, not to future changes.
 
         These terms are a **proposal until the three original equal cofounders each personally adopt them**. Do not use this form to grant membership until adoption is confirmed. Filing this public issue is not an automatic invitation, a qualified electronic signature, or proof of civil identity.
 
@@ -44,14 +44,14 @@ body:
     attributes:
       label: "Contributor Agreement v1.0 — explicit acceptance"
       options:
-        - label: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit 2e429d904db1059a678085792ad44f1d732d7ea1 for my authorized contributions to present and future Covered Repositories. NetPetra is excluded. I understand that existing valid outbound open-source licenses remain effective if I leave."
+        - label: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit d56279b4f3c25dd8f9e68699d61be23a0c7a6b07 for my authorized contributions to present and future Covered Repositories. I understand that existing valid outbound open-source licenses remain effective if I leave."
           required: true
   - type: checkboxes
     id: governance-v1
     attributes:
       label: "Governance v1.0 — explicit acceptance"
       options:
-        - label: "I have read and accept OpenDKG Governance v1.0 at commit 2e429d904db1059a678085792ad44f1d732d7ea1 for my requested role, including contribution review, decision-making, access control, and departure."
+        - label: "I have read and accept OpenDKG Governance v1.0 at commit d56279b4f3c25dd8f9e68699d61be23a0c7a6b07 for my requested role, including contribution review, decision-making, access control, and departure."
           required: true
   - type: checkboxes
     id: contributing-dco-v1
