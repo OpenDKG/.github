@@ -24,6 +24,17 @@ Use a dedicated GitHub issue or pull request to record each founder's exact acce
 
 No company or LLC is created by these documents, and they do not provide automatic personal-liability protection or guarantee legal enforceability in every jurisdiction. Obtain legal review for the actual countries involved before relying on them as contracts.
 
+## Joining and signing
+
+OpenDKG uses a **manual pre-invitation membership gate** and a **separate pull-request CLA check**. These processes are not active solely because the templates are published.
+
+- [Membership procedure](MEMBERSHIP.md) — applicant acceptance, founder adoption, reviewer evidence and permission rules.
+- [Membership agreement form](.github/ISSUE_TEMPLATE/membership-agreement.yml) — required acknowledgments referencing a fixed v1.0 policy revision.
+- [CLA Assistant setup](CLA_SETUP.md) — external GitHub authorization and required checks for contributions across covered repositories.
+- [PR template](.github/PULL_REQUEST_TEMPLATE.md) — contributor checklist, not a binding signature.
+
+**Activation requires** adoption by all three founding maintainers and a human owner review before sending invitations. A separate CLA Assistant setup is still needed to gate PR merges. Neither mechanism includes NetPetra.
+
 ### Source references
 
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
