@@ -24,6 +24,12 @@ These are **three equal founding seats**. Who created the GitHub account first d
 6. After unanimous adoption, assign GitHub privileges by an explicit, documented founders' decision. If all three are meant to have equal technical control, **Organization Owner** for all three is more equivalent than giving two people only **Repository Admin**. But GitHub Owners have powerful unilateral platform capabilities, so all three should understand this risk and use MFA, separate recovery methods, least privilege and review controls. This process **does not automatically grant any account Owner or Admin**.
 7. Ordinary later contributors apply via [the membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) or submit PRs as external contributors. They have **no cofounder status**, no governance vote and no automatic admin permissions.
 
+## Automatic verification once the three usernames are known
+
+The [founder adoption automation](FOUNDER_ADOPTION_AUTOMATION.md) will verify and close Issue #3 when all three **specific** original GitHub accounts have personally accepted the **exact same policy revision**. It records a verification receipt. It cannot run to completion until the two original cofounders' actual GitHub handles replace the placeholders in [the founder roster](.github/founder-roster.json) through a reviewed PR. The first account's existing valid acceptance is preserved; do not require `@a-51-50` to sign again without a material policy change.
+
+Issue comments can still be edited or deleted. On such a change after automatic closure, the bot will reopen Issue #3 if any previously verified acceptance is no longer currently present. This is an integrity check, not an immutable legal e-signature. No GitHub privileges are granted automatically.
+
 ## Accountability and limits
 
 No statement in GitHub governance makes the three persons automatically jointly liable for each other's activities, automatically shields `@a-51-50` from liability, or turns a GitHub organization into a limited-liability company. This must be addressed separately under the relevant jurisdictions and in actual contracts, if any. Do not represent an unregistered collaboration as an LLC.

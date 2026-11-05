@@ -1,0 +1,47 @@
+name: Verify and close founder agreement
+
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+  issues:
+    types: [edited, reopened]
+  push:
+    branches: [main]
+    paths:
+      - '.github/founder-roster.json'
+      - '.github/workflows/founder-adoption.yml'
+      - 'scripts/founder-adoption*.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: opendkg-founder-issue-3
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: >-
+      github.repository == 'OpenDKG/.github' &&
+      (github.event_name == 'workflow_dispatch' ||
+       github.event_name == 'push' ||
+       (github.event.issue.number == 3 && !github.event.issue.pull_request))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout trusted default branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify adoption validation logic
+        run: node --test scripts/founder-adoption-validator.test.mjs
+      - name: Read founder acceptances and update adoption issue if appropriate
+        run: node scripts/founder-adoption.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
