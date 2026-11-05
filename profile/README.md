@@ -12,7 +12,6 @@ OpenDKG brings together contributors building practical, transparent, auditable 
 
 ### Projects
 
-- **[NetPetra](https://github.com/a-51-50/Netpetra)** — desktop network monitoring and firewall software (maintained in its own repository).
 - More projects and integrations are in development.
 
 ### Participate
