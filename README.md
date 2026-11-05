@@ -34,6 +34,7 @@ OpenDKG was started as a joint effort of **three equal cofounders**. The fact th
 
 - [Founding acceptance and onboarding](FOUNDER_ONBOARDING.md)
 - [Founding adoption record (Issue #3)](https://github.com/OpenDKG/.github/issues/3)
+- [Automated final verification and Issue closing](FOUNDER_ADOPTION_AUTOMATION.md) — checks three pre-registered accounts; inactive while two founder handles remain unconfigured.
 
 Future non-founder members use the separate membership form. No one is automatically promoted to admin/Owner based on a form or comment. Equal cofounder status does not automatically transfer assets or divide statutory liability.
 
