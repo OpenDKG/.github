@@ -1,7 +1,7 @@
 // OpenDKG membership Issue Form validator. No dependencies or privileged token.
 import { createHash } from "node:crypto";
 
-export const POLICY_SHA = "12b4e5bfb23285f66127cfb979ed1327eaab8e64";
+export const POLICY_SHA = "2e429d904db1059a678085792ad44f1d732d7ea1";
 export const FORM_PREFIX = "[Membership request]";
 export const VERSION = "1.0";
 
