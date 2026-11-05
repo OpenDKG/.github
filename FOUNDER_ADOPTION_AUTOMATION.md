@@ -17,19 +17,19 @@ Once all three pass, it:
 
 If a signature is **later edited or deleted**, the same workflow reassesses the three accounts. If a formerly completed issue no longer has all three currently valid declarations, it **reopens Issue #3**, removes the completed label, and writes a warning. A completion receipt is a *historical observation*, not an immutable or legally qualified e-signature; administrators can still change GitHub issue state manually. GitHub's API and Git history do not make comments undeletable.
 
-## Initial configuration — required before it can auto-close
+## Founder roster configuration
 
-The committed configuration [`.github/founder-roster.json`](.github/founder-roster.json) starts with three reserved seats:
+The [`.github/founder-roster.json`](.github/founder-roster.json) configuration identifies three original equal cofounder accounts:
 
 ```json
 {
   "issue_number": 3,
   "policy_commit": "d56279b4f3c25dd8f9e68699d61be23a0c7a6b07",
-  "founder_logins": ["a-51-50", null, null]
+  "founder_logins": ["a-51-50", "dreddster", "brxtrac"]
 }
 ```
 
-The **two null entries intentionally prevent automatic closing**. Once the two other *original equal cofounders* give you their actual GitHub usernames, open a reviewed PR that replaces **only those two null values** with their handles, e.g., `"cofounder-two"` and `"cofounder-three"`. Do **not** invent account names, use GitHub profile display names, or fill the seats with a random contributor. Keep the three original persons' identities distinct.
+The three accounts were specified by the current technical owner and confirmed to have public GitHub repositories. **This records identities for technical verification only; it is not acceptance on anyone's behalf.** All three must personally sign the same pinned policy text in Issue #3. Changes to the roster must be reviewed and require an explicit, documented founding decision once the council is constituted.
 
 After roster change merges into `main`, a `push` event automatically checks already-posted comments; a new or edited comment on Issue #3 also triggers it. The three founders **do not need to be members of OpenDKG to post** on the public Issue, and no additional acceptance is required from `@a-51-50` if the **existing exact-revision declaration remains valid**.
 
