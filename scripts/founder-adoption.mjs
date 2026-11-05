@@ -1,5 +1,6 @@
 // GitHub Actions: close Issue #3 only after three pre-designated founders accept.
 import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { validateRoster, evaluateFounderAcceptance, POLICY_COMMIT, FOUNDER_ISSUE, COMPLETE_LABEL } from "./founder-adoption-validator.mjs";
 
 if (process.env.GITHUB_REPOSITORY !== "OpenDKG/.github") throw new Error("Unexpected repository.");
@@ -62,7 +63,8 @@ if (result.errors.length) throw new Error("Founder verification error: " + resul
 
 const labels = new Set((issue.labels || []).map((x) => x.name));
 const hadCompletionLabel = labels.has(COMPLETE_LABEL);
-const marker = "<!-- opendkg-founders-agreement-complete:" + POLICY_COMMIT + " -->";
+const signatureSetHash = createHash("sha256").update(JSON.stringify(result.records.map((r) => [r.user_id, r.comment_id, r.declaration_sha256]))).digest("hex");
+const marker = "<!-- opendkg-founders-agreement-complete:" + POLICY_COMMIT + ":" + signatureSetHash + " -->";
 const existingReceipt = comments.some((c) =>
   c.user?.login === "github-actions[bot]" && String(c.body || "").includes(marker)
 );
