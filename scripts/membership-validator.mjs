@@ -1,7 +1,7 @@
 // OpenDKG membership Issue Form validator. No dependencies or privileged token.
 import { createHash } from "node:crypto";
 
-export const POLICY_SHA = "2e429d904db1059a678085792ad44f1d732d7ea1";
+export const POLICY_SHA = "d56279b4f3c25dd8f9e68699d61be23a0c7a6b07";
 export const FORM_PREFIX = "[Membership request]";
 export const VERSION = "1.0";
 
@@ -64,7 +64,7 @@ export function validateMembershipIssue(issue) {
       count: 1,
       must: [{
         prefix: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit " + POLICY_SHA,
-        additional: ["NetPetra is excluded", "existing valid outbound open-source licenses"]
+        additional: ["existing valid outbound open-source licenses"]
       }]
     },
     {
