@@ -14,7 +14,7 @@ const sampleBody = [
   "### Contributor Agreement v1.0 — explicit acceptance",
   "",
   "- [X] I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit " + POLICY_SHA +
-    " for my authorized contributions to present and future Covered Repositories. NetPetra is excluded. I understand that existing valid outbound open-source licenses remain effective if I leave.",
+    " for my authorized contributions to present and future Covered Repositories. I understand that existing valid outbound open-source licenses remain effective if I leave.",
   "",
   "### Governance v1.0 — explicit acceptance",
   "",
