@@ -1,0 +1,36 @@
+name: OpenDKG membership intake
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: membership-intake-${{ github.event.issue.number || 'manual' }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.repository == 'OpenDKG/.github'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout trusted workflow source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run validator unit tests
+        run: node --test scripts/membership-validator.test.mjs
+      - name: Validate Issue Form and record receipt
+        if: github.event_name == 'issues'
+        run: node scripts/membership-intake.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
