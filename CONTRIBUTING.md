@@ -1,6 +1,6 @@
 # Contributing to OpenDKG projects
 
-Welcome to OpenDKG. These contribution guidelines are the **organization default** for repositories owned by **[OpenDKG](https://github.com/OpenDKG)** now or created later, **excluding NetPetra**. A project may have additional documented requirements, and the repository's own `LICENSE` determines its outbound software license.
+Welcome to OpenDKG. These contribution guidelines are the **organization default** for repositories owned by **[OpenDKG](https://github.com/OpenDKG)** now or created later. A project may have additional documented requirements, and the repository's own `LICENSE` determines its outbound software license.
 
 **Default software license: Apache-2.0.** Each project must contain its **own** license file. Policies and the license in `OpenDKG/.github` do not automatically add a license to other repositories.
 
@@ -11,7 +11,7 @@ Read our [Contributor Agreement](https://github.com/OpenDKG/.github/blob/main/CO
 ## Before your first contribution
 
 1. Check the specific repository's `LICENSE`, `README`, third-party notices, and any special rules. If its license differs from Apache-2.0, obtain explicit permission to submit under the stated license.
-2. Explicitly accept the **current Contributor Agreement version** through an attributed GitHub acknowledgment referring to its exact commit SHA. One valid acceptance is intended to cover subsequent authorized contributions to current and future OpenDKG repositories, except NetPetra, until a material policy revision needs new acceptance. Acceptance is **not** automatic from joining an organization.
+2. Explicitly accept the **current Contributor Agreement version** through an attributed GitHub acknowledgment referring to its exact commit SHA. One valid acceptance is intended to cover subsequent authorized contributions to current and future OpenDKG repositories, until a material policy revision needs new acceptance. Acceptance is **not** automatic from joining an organization.
 3. Use a stable GitHub account/pseudonym and an email you control; check that any employer, client or coauthor rights have been cleared.
 4. Sign off each commit with the Developer Certificate of Origin: `git commit -s -m "Your change"`. This is separate from, and **does not replace**, the agreement acceptance. Use GPG/SSH signing additionally if your repository enforces verified cryptographic commits.
 5. Submit a PR; wait for independent maintainer review, required checks and licensing/provenance verification.
