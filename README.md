@@ -28,6 +28,15 @@ No company or LLC is created by these documents, and they do not provide automat
 
 The [membership automation guide](MEMBERSHIP_AUTOMATION.md) explains the GitHub Actions intake checker, version-pinned consent receipts, and required human approval **before** an organization invitation. Form validation is not a legal-signature or membership approval. CLA checks for pull requests still require [separate configuration](CLA_SETUP.md).
 
+## Three equal cofounders
+
+OpenDKG was started as a joint effort of **three equal cofounders**. The fact that `@a-51-50` currently holds the initial GitHub Organization Owner role is technical setup, **not** sole-founder or sole-liability status. All three must personally accept the same versioned documents from their own GitHub accounts before the full council operates under this proposed governance. The other two can accept *before* accepting an organizational invitation.
+
+- [Founding acceptance and onboarding](FOUNDER_ONBOARDING.md)
+- [Founding adoption record (Issue #3)](https://github.com/OpenDKG/.github/issues/3)
+
+Future non-founder members use the separate membership form. No one is automatically promoted to admin/Owner based on a form or comment. Equal cofounder status does not automatically transfer assets or divide statutory liability.
+
 ## Joining and signing
 
 OpenDKG uses a **manual pre-invitation membership gate** and a **separate pull-request CLA check**. These processes are not active solely because the templates are published.

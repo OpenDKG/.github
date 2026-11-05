@@ -4,7 +4,7 @@
 **Maintained at:** https://github.com/OpenDKG/.github/blob/main/CONTRIBUTOR_AGREEMENT.md  
 **Project operator:** the individual volunteer maintainers collaborating through the OpenDKG GitHub organization; **OpenDKG is not represented by this document as a registered company or separate legal person**.
 
-> **Adoption requirement.** Publishing this document is not agreement. Every founding maintainer and later contributor must affirmatively accept the exact version before the team treats it as binding on that person. The initial three maintainers must separately record unanimous adoption of the initial governance terms. Existing code is not retroactively licensed without permission from the relevant rightsholders. This is a draft for legal review in applicable jurisdictions, not a guarantee of enforceability or immunity from liability.
+> **Adoption requirement.** Publishing this document is not agreement. Every founding maintainer and later contributor must affirmatively accept the exact version before the team treats it as binding on that person. The three original equal cofounders must each independently record acceptance of the same revision before relying on unanimous initial governance adoption. The first GitHub Organization Owner is a temporary technical custodian, not a sole legal founder or sole guarantor of other people's activities. Existing code is not retroactively licensed without permission from the relevant rightsholders. This is a draft for legal review in applicable jurisdictions, not a guarantee of enforceability or immunity from liability.
 
 ## 1. What repositories are covered
 
@@ -53,7 +53,7 @@ Before their first contribution under this policy, the contributor must post an 
 
 > I, the GitHub account signing this comment, affirmatively accept **OpenDKG Contributor Agreement v1.0**, at the exact revision linked in this comment, for my authorized contributions to **all current and future Covered Repositories owned by OpenDKG**, excluding **NetPetra**. I understand that valid outbound licenses I grant on accepted contributions cannot be revoked solely because I leave the team. I retain ownership of my original work. My previously submitted work is included **only** if I list the relevant commits or PRs here. Covered earlier work: **none / links**. Agreement revision (commit SHA): **[paste commit]**.
 
-A DCO `Signed-off-by` trailer is **not** acceptance of this separate agreement. Acceptance of a materially revised agreement requires a new explicit acknowledgment; changed terms cannot retroactively replace prior public licenses. The initial three maintainers must each individually accept this agreement and record adoption of `GOVERNANCE.md` before they claim these rules are in force.
+A DCO `Signed-off-by` trailer is **not** acceptance of this separate agreement. Acceptance of a materially revised agreement requires a new explicit acknowledgment; changed terms cannot retroactively replace prior public licenses. The three original equal cofounders must each personally accept this agreement and record adoption of `GOVERNANCE.md` before the three-person council claims its collective rules are in force. Founding status is not decided by the order of GitHub invitations.
 
 ## 7. Previous contributions
 

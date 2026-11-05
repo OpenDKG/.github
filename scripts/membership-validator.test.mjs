@@ -90,3 +90,16 @@ test("parses headings without treating unchecked text as acceptance", () => {
   assert.equal(sections.get("Your GitHub username"), "test-developer");
   assert.equal(sections.get("Requested participation"), "Developer / member");
 });
+
+test("ordinary membership form does not recognize cofounder as an applicant role", () => {
+  const result = validateMembershipIssue(issue(sampleBody.replace("Developer / member", "Original cofounder")));
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /participation role/);
+});
+
+test("policy revision in the public Issue Form matches the validator", async () => {
+  const { readFileSync } = await import("node:fs");
+  const form = readFileSync(new URL("../.github/ISSUE_TEMPLATE/membership-agreement.yml", import.meta.url), "utf8");
+  assert.ok(form.includes("at commit " + POLICY_SHA));
+  assert.ok(form.includes("This form is for other applicants"));
+});
