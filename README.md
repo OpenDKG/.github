@@ -24,6 +24,10 @@ Use a dedicated GitHub issue or pull request to record each founder's exact acce
 
 No company or LLC is created by these documents, and they do not provide automatic personal-liability protection or guarantee legal enforceability in every jurisdiction. Obtain legal review for the actual countries involved before relying on them as contracts.
 
+### Automated membership validation
+
+The [membership automation guide](MEMBERSHIP_AUTOMATION.md) explains the GitHub Actions intake checker, version-pinned consent receipts, and required human approval **before** an organization invitation. Form validation is not a legal-signature or membership approval. CLA checks for pull requests still require [separate configuration](CLA_SETUP.md).
+
 ## Joining and signing
 
 OpenDKG uses a **manual pre-invitation membership gate** and a **separate pull-request CLA check**. These processes are not active solely because the templates are published.
