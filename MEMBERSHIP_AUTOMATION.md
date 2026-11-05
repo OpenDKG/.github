@@ -11,7 +11,7 @@ This automated Issue Form validator is for **other future members and contributo
 ## Applicant workflow
 
 1. Read [Contributor Agreement v1.0](CONTRIBUTOR_AGREEMENT.md), [Governance v1.0](GOVERNANCE.md), [Contribution Guidelines](CONTRIBUTING.md), and [DCO](DCO.md).
-2. Open the [membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) with your own GitHub account and check each required consent item. The form pins revision `2e429d904db1059a678085792ad44f1d732d7ea1`. NetPetra is expressly excluded.
+2. Open the [membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) with your own GitHub account and check each required consent item. The form pins revision `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07`.
 3. GitHub Actions runs on an opened, edited or reopened Issue. It checks that the claimed GitHub handle equals the actual Issue author and that all required checked statements include the correct agreement version.
 4. The workflow comments with a timestamp, exact pinned policy SHA and SHA-256 of the submitted issue body. If the format is incomplete, edit the form or submit a new one. Editing a request is revalidated and a new receipt is appended for changed content.
 5. A maintainer **must manually review the request and approve it before anyone sends an organization invitation**. Even a valid-format label is not an invitation or contract verification. Preserve the recorded receipt and the approver's separate comment.
