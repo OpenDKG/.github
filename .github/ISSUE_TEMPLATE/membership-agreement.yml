@@ -42,14 +42,14 @@ body:
     attributes:
       label: "Contributor Agreement v1.0 — explicit acceptance"
       options:
-        - label: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at the pinned revision above for my authorized contributions to present and future Covered Repositories. NetPetra is excluded. I understand that existing valid outbound open-source licenses remain effective if I leave."
+        - label: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit 12b4e5bfb23285f66127cfb979ed1327eaab8e64 for my authorized contributions to present and future Covered Repositories. NetPetra is excluded. I understand that existing valid outbound open-source licenses remain effective if I leave."
           required: true
   - type: checkboxes
     id: governance-v1
     attributes:
       label: "Governance v1.0 — explicit acceptance"
       options:
-        - label: "I have read and accept the applicable OpenDKG Governance v1.0 rules for my requested role, including contribution review, decision-making, access control, and departure."
+        - label: "I have read and accept OpenDKG Governance v1.0 at commit 12b4e5bfb23285f66127cfb979ed1327eaab8e64 for my requested role, including contribution review, decision-making, access control, and departure."
           required: true
   - type: checkboxes
     id: contributing-dco-v1

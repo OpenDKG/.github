@@ -2,6 +2,10 @@
 
 **Status: proposed until the three founding maintainers expressly adopt the v1.0 governance and Contributor Agreement.** This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG), **excluding NetPetra** even if it is transferred to this organization. It is not a legal-person registration or a guarantee of enforceable e-signatures.
 
+## Automated intake checks
+
+See [MEMBERSHIP_AUTOMATION.md](MEMBERSHIP_AUTOMATION.md). A GitHub Actions workflow validates form structure, matches the claimed username to the actual issue author, checks pinned acknowledgments, adds a validation label, and posts a timestamped body-hash receipt. **It never sends invitations or grants GitHub permissions.** The current three-founder adoption requirement remains mandatory.
+
 ## For applicants
 
 1. Read the **immutable v1.0 revision** of [Contributor Agreement](https://github.com/OpenDKG/.github/blob/12b4e5bfb23285f66127cfb979ed1327eaab8e64/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/12b4e5bfb23285f66127cfb979ed1327eaab8e64/GOVERNANCE.md), [Contribution Guidelines](https://github.com/OpenDKG/.github/blob/12b4e5bfb23285f66127cfb979ed1327eaab8e64/CONTRIBUTING.md), and [DCO](https://github.com/OpenDKG/.github/blob/12b4e5bfb23285f66127cfb979ed1327eaab8e64/DCO.md). Version reference: `12b4e5bfb23285f66127cfb979ed1327eaab8e64`.
