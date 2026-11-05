@@ -7,8 +7,8 @@
 OpenDKG is intended as a project **cofounded from the outset by three equal individuals**:
 
 - `@a-51-50` — one of the three equal cofounders; presently the **technical GitHub Organization Owner** because this account created the organization.
-- Original cofounder 2 — **GitHub handle not yet provided or personally confirmed**.
-- Original cofounder 3 — **GitHub handle not yet provided or personally confirmed**.
+- `@dreddster` — one of the original equal cofounders; personal acceptance of the pinned policy is still required.
+- `@brxtrac` — one of the original equal cofounders; personal acceptance of the pinned policy is still required.
 
 These are **three equal founding seats**. Who created the GitHub account first does not confer additional votes, project copyright, founders' ownership rights, or permanent control. The other original cofounders are not ordinary later-stage applicants merely because their GitHub invitations have not yet been sent. However, **do not claim that anyone is contractually bound until they personally accept** the relevant agreement.
 
@@ -26,7 +26,7 @@ These are **three equal founding seats**. Who created the GitHub account first d
 
 ## Automatic verification once the three usernames are known
 
-The [founder adoption automation](FOUNDER_ADOPTION_AUTOMATION.md) will verify and close Issue #3 when all three **specific** original GitHub accounts have personally accepted the **exact same policy revision**. It records a verification receipt. It cannot run to completion until the two original cofounders' actual GitHub handles replace the placeholders in [the founder roster](.github/founder-roster.json) through a reviewed PR. The first account's existing valid acceptance is preserved; do not require `@a-51-50` to sign again without a material policy change.
+The [founder adoption automation](FOUNDER_ADOPTION_AUTOMATION.md) will verify and close Issue #3 when all three **specific** original GitHub accounts have personally accepted the **exact same policy revision**. It records a verification receipt. The three account handles are recorded in [the founder roster](.github/founder-roster.json); it cannot close Issue #3 until all three individuals have posted personal valid acceptances. The first account's existing valid acceptance is preserved; do not require `@a-51-50` to sign again without a material policy change.
 
 Issue comments can still be edited or deleted. On such a change after automatic closure, the bot will reopen Issue #3 if any previously verified acceptance is no longer currently present. This is an integrity check, not an immutable legal e-signature. No GitHub privileges are granted automatically.
 
