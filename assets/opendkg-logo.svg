@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="OpenDKG logo with decentralized network icon"><defs>
+<linearGradient id="outer" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0644B7"/><stop offset=".47" stop-color="#008FE4"/><stop offset="1" stop-color="#00CBB4"/></linearGradient>
+<linearGradient id="graph" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0661C7"/><stop offset=".5" stop-color="#009ED9"/><stop offset="1" stop-color="#00BCA6"/></linearGradient>
+<linearGradient id="right" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12D5C4"/><stop offset="1" stop-color="#009D94"/></linearGradient>
+</defs><g transform="translate(200 62)"><g fill="none" stroke="url(#graph)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+<path d="M400 224 222 325 222 500 400 600 578 500 578 325Z"/>
+<path d="M400 224V412M222 325 400 412 578 325M222 500 400 412 578 500M400 600V412"/>
+</g>
+<circle cx="400" cy="224" r="43" fill="#08C5BE"/><circle cx="222" cy="325" r="43" fill="#075BC6"/><circle cx="578" cy="325" r="43" fill="#0BCEA7"/>
+<circle cx="222" cy="500" r="43" fill="#0574D6"/><circle cx="578" cy="500" r="43" fill="url(#right)"/><circle cx="400" cy="600" r="43" fill="#0ACED3"/>
+<circle cx="400" cy="412" r="56" fill="#0647B3" stroke="#fff" stroke-width="10"/>
+<path d="M340 697 110 564Q80 545 80 511V270Q80 237 109 220L367 70Q400 51 433 70L691 220Q720 237 720 270V511Q720 545 690 564L460 697" fill="none" stroke="url(#outer)" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/></g><text x="600" y="1083" font-family="Inter,Arial,Helvetica,sans-serif" font-weight="800" font-size="190" letter-spacing="-5" text-anchor="middle" textLength="1030" lengthAdjust="spacingAndGlyphs"><tspan fill="#122131">Open</tspan><tspan fill="#0649BA">DKG</tspan></text></svg>
