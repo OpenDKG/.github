@@ -1,13 +1,13 @@
 # OpenDKG — three equal cofounders: onboarding and acceptance
 
-**Status: proposal.** This document describes the team's intended founding arrangements. It does not bind someone who has not personally agreed, create a company, transfer intellectual property, or distribute legal liability.
+**Historical v1.0 onboarding instructions; all three founders subsequently submitted acceptance in Issue #3 (verified 2026-11-05). The new v1.1 governance/economic draft has NOT been adopted.** This document describes the team's intended founding arrangements. It does not bind someone who has not personally agreed, create a company, transfer intellectual property, or distribute legal liability.
 
 ## Founding relationship
 
 OpenDKG is intended as a project **cofounded from the outset by three equal individuals**:
 
 - `@a-51-50` — one of the three equal cofounders; presently the **technical GitHub Organization Owner** because this account created the organization.
-- `@dreddster` — one of the original equal cofounders; personal acceptance of the pinned policy is still required.
+- `@dreddster` — one of the original equal cofounders; personal acceptance of v1.0 has been recorded in Issue #3; v1.1 is a separate pending proposal.
 - `@brxtrac` — one of the original equal cofounders; personal acceptance of the pinned policy is still required.
 
 These are **three equal founding seats**. Who created the GitHub account first does not confer additional votes, project copyright, founders' ownership rights, or permanent control. The other original cofounders are not ordinary later-stage applicants merely because their GitHub invitations have not yet been sent. However, **do not claim that anyone is contractually bound until they personally accept** the relevant agreement.

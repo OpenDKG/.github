@@ -4,6 +4,18 @@ This repository contains **organization-wide contribution, governance and licens
 
 **Scope:** Current and future repositories owned by OpenDKG, subject to the published licensing and repository-adoption rules. This `.github` repository is itself a covered repository; third-party and previously licensed material retain their original rights.
 
+> **Governance amendment in review:** the branch `policy/three-founders-equal-share-no-tsc-v1-1` proposes three equal 1/3 project economic shares and three functional Team Leads in place of a TSC. These are **draft amendments**. Existing v1.0 acceptance remains recorded at [Issue #3](https://github.com/OpenDKG/.github/issues/3) and its pinned commit; publishing a PR does not amend anyone's rights.
+
+## New proposed operational documents (v1.1)
+
+- [Founders' economic agreement — draft](FOUNDERS_ECONOMIC_AGREEMENT_DRAFT.md) — explicit inter-founder 1/3 arrangement and required personal approval.
+- [Financial policy](FINANCIAL_POLICY.md) — restricted funds, net proceeds, receipt ledger and payment approvals.
+- [Team roles](TEAM_ROLES.md) — three operational leads, no TSC.
+- [Project admission](PROJECT_ADMISSION.md) — how repositories and rights holders become official OpenDKG projects.
+- [Specification process](SPECIFICATION_PROCESS.md) — ODIP proposals, drafts, candidates and adopted specifications.
+- [Brand & IP](BRAND_AND_IP_POLICY.md) — distinguish GitHub access, economic rights, copyright and branding.
+- [Policy adoption checklist](POLICY_V1_1_ADOPTION_CHECKLIST.md) — new assent and migration gates.
+
 ## Documents
 
 | File | Purpose |

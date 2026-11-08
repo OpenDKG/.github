@@ -1,10 +1,18 @@
 # OpenDKG Contributor Agreement
 
-**Version:** 1.0 — proposed for adoption  
+**Revision:** v1.1 — DRAFT, NOT EFFECTIVE OR OPEN FOR AUTOMATIC CLA RE-SIGNING. Version 1.0 accepted at commit `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07` remains the operative acceptance text until the revised agreement is expressly adopted and a versioned CLA process is completed.  
 **Maintained at:** https://github.com/OpenDKG/.github/blob/main/CONTRIBUTOR_AGREEMENT.md  
 **Project operator:** the individual volunteer maintainers collaborating through the OpenDKG GitHub organization; **OpenDKG is not represented by this document as a registered company or separate legal person**.
 
 > **Adoption requirement.** Publishing this document is not agreement. Every founding maintainer and later contributor must affirmatively accept the exact version before the team treats it as binding on that person. The three original equal cofounders must each independently record acceptance of the same revision before relying on unanimous initial governance adoption. The first GitHub Organization Owner is a temporary technical custodian, not a sole legal founder or sole guarantor of other people's activities. Existing code is not retroactively licensed without permission from the relevant rightsholders. This is a draft for legal review in applicable jurisdictions, not a guarantee of enforceability or immunity from liability.
+
+## Founder economic agreement versus contributor rights (proposed clarification)
+
+The three original founders propose equal **one-third shares of legally distributable net proceeds** from each eligible OpenDKG project, independently of their Team Lead function or volume of source-code contributions. These inter-founder economic terms are **separate from this public Contributor Agreement**, require express acceptance from the affected individuals, and are set out in [FOUNDERS_ECONOMIC_AGREEMENT_DRAFT.md](FOUNDERS_ECONOMIC_AGREEMENT_DRAFT.md) and [FINANCIAL_POLICY.md](FINANCIAL_POLICY.md).
+
+**External contributors** receive no founder seat, automatic profit share, equity, employment, or fee merely by contributing, joining, or accepting this CLA. Payment or other participation requires a separately authorized written arrangement, without impairing the contributor's statutory rights. Open-source code grants remain effective as licensed. This agreement does **not** transfer or fractionally assign every contributor's copyright, moral rights, patents, trademarks, or pre-existing code to the three founders. Any IP co-ownership or assignment requires a separate, lawful rights-holder agreement.
+
+This draft amendment must not be used as a substitute for individual re-acceptance when the agreement terms materially change. Do not silently update the pinned CLA Assistant text or imply that a check passing against v1.0 proves acceptance of v1.1.
 
 ## 1. What repositories are covered
 

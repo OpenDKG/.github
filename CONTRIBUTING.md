@@ -8,6 +8,12 @@ Read our [Contributor Agreement](https://github.com/OpenDKG/.github/blob/main/CO
 
 **Founders:** The three original equal OpenDKG cofounders, including `@a-51-50`, record their initial agreement through [Issue #3](https://github.com/OpenDKG/.github/issues/3), even before joining the organization. Ordinary future members use the [membership procedure](MEMBERSHIP.md). Founder status is not conferred by requesting membership.
 
+## Proposals, technical drafts, and the three Team Leads (proposed v1.1)
+
+OpenDKG does not use a Technical Steering Committee. Contributors can propose improvements through [SPECIFICATION_PROCESS.md](SPECIFICATION_PROCESS.md) and its [ODIP template](templates/ODIP_TEMPLATE.md). Engineering & Security coordinates technical review and testability; Marketing & Partnerships handles outreach; Community & Contributor Operations handles recruiting and onboarding. **All three founders retain equal governance and proposed economic participation.**
+
+Contributions remain voluntary unless an authorized, explicit paid-work agreement states otherwise. Joining, submitting a proposal, or opening a PR does not confer wages, an ownership stake, a founder share, or license rights in other contributors' work. For ordinary PRs, follow the existing independent code review and CI rules. Normative protocol documents require separate review and adoption, not just a merged PR. The process updates here are pending v1.1 adoption.
+
 ## Before your first contribution
 
 1. Check the specific repository's `LICENSE`, `README`, third-party notices, and any special rules. If its license differs from Apache-2.0, obtain explicit permission to submit under the stated license.

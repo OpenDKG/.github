@@ -1,6 +1,6 @@
 # OpenDKG Governance
 
-**Version:** 1.0 — proposed for adoption  
+**Revision:** v1.1 — DRAFT FOR FOUNDER REVIEW; NOT YET ADOPTED. The operative previously accepted v1.0 remains the text pinned at commit `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07` until a valid amendment is accepted. This draft does not transfer property or create payment obligations.  
 **Scope:** OpenDKG GitHub organization and its current and future organization-owned projects.
 
 > OpenDKG is presently treated here as an **informal collaboration of individuals**, not a registered company, employer, partnership, or separate legal person. This document sets voluntary operating rules; it does not determine ownership of a personal domain, trademark, bank account, wallet, signing certificate or other asset. It cannot override GitHub's technical permissions or applicable law.
@@ -26,6 +26,30 @@ Each cofounder keeps their pre-existing personal assets and their own copyrights
 Public aliases may be used, but a GitHub handle is not proof of legal identity. Protect any privately verified identity information outside public git history. Never put passwords, recovery codes, or civil identity documents in an issue.
 
 A cofounder may resign by a dated written message recorded in the governance log. Past validly granted licenses remain effective. Subsequent maintainers may be appointed by **two-thirds of active voting cofounders/maintainers, rounded up**, and must affirmatively accept applicable rules before receiving privileged access. Admission to GitHub membership alone does not provide a governance vote.
+
+## 1A. Proposed shared-project model (v1.1; pending adoption)
+
+**Three equal founders, no Technical Steering Committee (TSC).** For the three founders listed in the accepted founder roster (`@a-51-50`, `@brxtrac`, `@dreddster`), equal founding status means one vote per founder and intended equal economic participation in every qualifying OpenDKG project. Technical work is coordinated by function-specific Team Leads, **not** a TSC, project board, or special class of owner.
+
+### Qualifying projects and equal economic participation
+
+A qualifying project is a project created and published under the OpenDKG GitHub organization **or explicitly admitted as an official OpenDKG project under [PROJECT_ADMISSION.md](PROJECT_ADMISSION.md)**. Projects owned by third parties or personal accounts are not swept into this arrangement merely by a hyperlink, endorsement, or participation; their rights holders must consent to any transfer or license. For a transferred project, existing history and third-party rights require a provenance review.
+
+The intended agreement between the founders is **one-third (1/3) each of legally distributable net project proceeds**, under [FINANCIAL_POLICY.md](FINANCIAL_POLICY.md) and the independently executed [founders' economic agreement draft](FOUNDERS_ECONOMIC_AGREEMENT_DRAFT.md). This is **not** an automatic claim to one-third of gross grants, donor-restricted funds, bank accounts, trademarks, or another person's copyright. Equal shares do not depend on the quantity of code written or which founder serves as a Team Lead. No earned or contractually vested share is lost automatically because of resignation or inactivity; departure, transfer, and buyout require an additional lawful agreement.
+
+**Economic parity is a protected founding term:** any exception for a particular official OpenDKG project or change to the 1/3–1/3–1/3 split requires **unanimous, express, version-pinned consent of all three affected founders**. A Council majority or branch merge alone cannot impose this financial arrangement on an individual or change their private rights. This policy is subject to law and any enforceable donor, grant, fiscal-sponsor, or third-party contractual restrictions. It remains a proposal until properly accepted.
+
+Copyright remains with each rights holder subject to existing open-source licenses unless a legally effective, separate assignment or co-ownership agreement is made. **Neither an organization vote nor the Contributor Agreement itself creates a three-way assignment of all project IP.** See [BRAND_AND_IP_POLICY.md](BRAND_AND_IP_POLICY.md).
+
+### Three function-specific Team Leads
+
+The founders jointly assign one founder as the primary coordinating Lead for each function, recorded in a public Council decision:
+
+1. **Engineering & Security** — architecture, code quality, testing, releases, security coordination, interoperability drafts.
+2. **Marketing & Partnerships** — public communications, branding coordination, outreach, grants and partner introductions (but no unilateral financial commitments).
+3. **Community & Contributor Operations** — recruiting, onboarding, contributor support, documentation workflows and community moderation.
+
+All founders may contribute across all functions. Lead roles are operational responsibilities, **not extra voting power, personal IP title, project ownership, or a larger revenue share**. Leads may delegate ordinary tasks; major policy, money, license, release-security, and organization-access decisions follow Council and existing review controls. Assignments or changes require a recorded 2-of-3 Council approval, without altering the protected equal founder shares.
 
 ## 2. Approval rules
 
@@ -63,11 +87,15 @@ With two remaining active maintainers, require both for official releases and ir
 
 ## 5. Decisions and amendments
 
-Record significant votes and policy changes in GitHub issues/PRs, including participants, date, version, approvals and the resulting commit SHA. A change to this policy requires two of three active cofounders; after new maintainers join, two-thirds of active maintainers rounded up. A material change to the **Contributor Agreement** requires renewed affirmative acceptance by each contributor to whom the new terms are to apply; prior license grants remain intact.
+Record significant votes and policy changes in GitHub issues/PRs, including participants, date, version, approvals and the resulting commit SHA. Ordinary changes to this policy generally require two of the three founders; the protected equal economic share, the identity of the three founding beneficiaries, and changes to their vested rights require the unanimous and legally effective consent of all affected founders. Later non-founder maintainers have no automatic vote to rewrite founding economic rights. The existing rules apply to any amendment until this draft is validly adopted. A material change to the **Contributor Agreement** requires renewed affirmative acceptance by each contributor to whom the new terms are to apply; prior license grants remain intact.
 
 Decisions about real-world contracts, personal property, taxes, jurisdiction, domain custody and trademarks require separate arrangements with identifiable parties where necessary. A governance vote cannot make someone else liable for a personal obligation or transfer their assets without legally effective consent.
 
 ## 6. Donations and finances
+
+**Proposed v1.1 financial model:** See [FINANCIAL_POLICY.md](FINANCIAL_POLICY.md) for fund classification, restricted donations/grants, a per-project ledger, permissible expenses, documented approvals, receipts, settlement accounting, and the proposed equal distribution of *eligible net proceeds* to the three founders. Any signature/acceptance, legal entity, payout provider, tax, and jurisdiction requirements must be resolved before collecting or distributing money. A project or Team Lead may not promise sponsors votes, trademark rights, project ownership, or a different distribution.
+
+
 
 No shared project money should be collected until the council adopts a separate policy covering the actual receiving person, purpose, bookkeeping, refunds where relevant, tax reporting, transparency and separation of project and personal funds. Crypto wallet possession does not determine beneficial ownership or remove legal duties. Do not imply that sponsors purchase votes, guarantee support, or receive equity without separately reviewed lawful documentation.
 

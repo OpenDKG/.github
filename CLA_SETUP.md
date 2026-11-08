@@ -2,6 +2,10 @@
 
 **Status: setup instructions only.** Adding this file does **not** install a GitHub App, activate checks, or collect any signatures. An authorized OpenDKG owner must finish the external setup and GitHub rules configuration.
 
+## Proposed v1.1 governance amendment — safe activation sequence
+
+The three founders signed the previously pinned v1.0 terms; v1.1 revisions are **not** automatically accepted by that event. **Do not replace the active Gist, change the CLA Assistant mapping, or assume existing signers agreed to v1.1.** Obtain required founder acceptance and review whether each contributor must explicitly accept a new material agreement version. Publish a new immutable version, update checks deliberately, and test a non-signer before requiring the new check on real repositories. The [adoption checklist](POLICY_V1_1_ADOPTION_CHECKLIST.md) is a proposal, not an authorization to alter the CLA configuration.
+
 ## Purpose
 
 The [CLA Assistant service](https://cla-assistant.io/) can prompt an external pull-request contributor to sign a contributor license agreement using their GitHub identity, record who accepted which version, and report a PR status. The software is [open-source](https://github.com/cla-assistant/cla-assistant) and the project describes its hosted service as free. Review the service's privacy and permission implications before authorization.

@@ -1,6 +1,15 @@
 # OpenDKG membership and acceptance procedure
 
-**Status: proposed until the three original equal cofounders each personally accept the v1.0 Governance and Contributor Agreement.** This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG). It is not a legal-person registration or a guarantee of enforceable e-signatures.
+**Status:** the three original cofounders publicly accepted the same pinned v1.0 terms in [Issue #3](https://github.com/OpenDKG/.github/issues/3). **The additional v1.1 governance/finance/contributor provisions in this branch are DRAFT ONLY** and require the relevant new affirmative acceptances. No existing membership or CLA automation is changed automatically. This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG). It is not a legal-person registration or a guarantee of enforceable e-signatures.
+
+## Membership, roles, and economic participation (proposed v1.1)
+
+- Membership and contributor access do **not** make an applicant a founder, beneficiary of the founder 1/3 split, copyright co-owner, employee, or Council voter.
+- The three founding seats remain reserved to the three verified original founder accounts. Their **one vote each and protected equal proposed financial shares** do not vary by Team Lead role.
+- The Council coordinates work through **Engineering & Security**, **Marketing & Partnerships**, and **Community & Contributor Operations** leads; **no Technical Steering Committee** is created.
+- Team Leads may nominate and mentor contributors. GitHub invitation and privileged access continue to require the existing verified membership acceptance and recorded maintainer/Council authorization.
+- A separately compensated contributor must have a signed scope, payment terms, IP rights and source-of-funds approval **before** paid work is performed; no such agreement is presumed from a PR.
+- Keep the approved v1.0 consent checks and pinned revision in place until v1.1 is validly adopted and the validation workflows are deliberately migrated.
 
 ## Automated intake checks
 
