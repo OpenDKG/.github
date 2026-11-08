@@ -5,17 +5,19 @@
 <h1 align="center">OpenDKG</h1>
 
 <p align="center">
-  Independent open-source software for privacy, security, and interoperable infrastructure.
+  Independent open-source applications, connectors and tools that make existing technologies easier to use.
 </p>
 
-OpenDKG brings together contributors building practical, transparent, auditable tools. Our projects may integrate decentralized knowledge graph and agent-security technologies where useful, while remaining independently governed.
+OpenDKG is a small collaborative initiative building useful, free and open-source software. Our scope includes everyday utilities, integrations, automation, community tools, developer tools and privacy or security features where appropriate.
+
+A project may optionally integrate decentralized knowledge graphs (DKG), Blackbox or other technologies when that genuinely benefits users. No particular technology or product defines the entire initiative.
 
 ### Projects
 
-- More projects and integrations are in development.
+Projects are announced here when their public documentation is ready. Independent project repositories retain their own licenses and maintainer responsibilities.
 
-### Participate
+### Contribute
 
-Read the [contribution guidelines](https://github.com/OpenDKG/.github/blob/main/CONTRIBUTING.md), [governance](https://github.com/OpenDKG/.github/blob/main/GOVERNANCE.md), and [membership information](https://github.com/OpenDKG/.github/blob/main/MEMBERSHIP.md) before contributing.
+See our [contribution guidelines](https://github.com/OpenDKG/.github/blob/main/CONTRIBUTING.md), [governance](https://github.com/OpenDKG/.github/blob/main/GOVERNANCE.md), and [membership information](https://github.com/OpenDKG/.github/blob/main/MEMBERSHIP.md).
 
-<sub>OpenDKG is independent and does not imply affiliation with, sponsorship by, or endorsement from third-party technologies it may integrate.</sub>
+<sub>OpenDKG is independent. Integration with a third-party technology does not imply affiliation, endorsement or joint ownership.</sub>

@@ -1,52 +1,29 @@
-# OpenDKG membership and acceptance procedure
+# OpenDKG — Joining as a Member
 
-**Status: proposed until the three original equal cofounders each personally accept the v1.0 Governance and Contributor Agreement.** This procedure covers repositories owned by [OpenDKG](https://github.com/OpenDKG). It is not a legal-person registration or a guarantee of enforceable e-signatures.
+This page describes how **new, non-founder members** can request access. Anyone may contribute to a public project through its normal pull request process without first becoming an organization member.
 
-## Automated intake checks
+## Founders
 
-See [MEMBERSHIP_AUTOMATION.md](MEMBERSHIP_AUTOMATION.md). A GitHub Actions workflow validates form structure, matches the claimed username to the actual issue author, checks pinned acknowledgments, adds a validation label, and posts a timestamped body-hash receipt. **It never sends invitations or grants GitHub permissions.** The current three-founder adoption requirement remains mandatory.
+OpenDKG's three original cofounders (`@a-51-50`, `@dreddster` and `@brxtrac`) have already recorded acceptance of the same pinned Governance and Contributor Agreement v1.0 revision in [Issue #3](https://github.com/OpenDKG/.github/issues/3). The completed record is preserved there. The membership application below is **not** for the original founders.
 
-## Original three cofounders — separate acceptance path
+## How to apply
 
-OpenDKG has **three equal cofounders from the outset**; the initial technical GitHub Organization Owner `@a-51-50` is not the sole founder. Each of the other two cofounders may **sign from their own GitHub account before joining** OpenDKG: visit [Founders' adoption Issue #3](https://github.com/OpenDKG/.github/issues/3), read the pinned exact revision, and personally post the prescribed acceptance. The same requirement applies to `@a-51-50`. Do not treat an invitation, membership, or this documentation as consent.
+1. Read the exact accepted versions of [Contributor Agreement](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/GOVERNANCE.md), [Contribution Guidelines](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTING.md) and [DCO](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/DCO.md).
+2. Open the [OpenDKG membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) from **your own** GitHub account. Complete the required acknowledgments for the pinned revision.
+3. A GitHub Actions check may verify form structure, account handle and acknowledgment text, and leave a receipt. **Passing automation is not membership approval, legal identity verification or an invitation.**
+4. An authorized maintainer must **manually review** the application and record the decision, including the requested role and approvals under [Governance](GOVERNANCE.md).
+5. Only after approval can an Organization Owner issue an invitation. Apply least-privilege repository permissions; access changes are never automatic.
 
-After each original cofounder accepts, the current technical owner can send that cofounder an organization invitation. Joining as Member is sufficient for onboarding. Once all three accept, the initial roster is documented and the agreed administrative roles can be assigned **manually**; no GitHub Action promotes accounts. These three founder seats do not become available to outside applicants. Refer to [GOVERNANCE.md](GOVERNANCE.md) and [FOUNDER_ONBOARDING.md](FOUNDER_ONBOARDING.md).
+## For maintainers
 
-## For applicants (future non-founder contributors)
+- Confirm the request author is the person seeking access, the current acceptance is unambiguous, and the correct version is acknowledged.
+- Do not invite an applicant or grant additional permissions solely because a bot added a validation label. Follow the approval requirements in the accepted Governance document.
+- Record the GitHub issue link, accepted revision, reviewer, date and permission level. If the application is edited after approval, reassess its meaning.
+- For departure, revoke access promptly and protect credentials, but keep legitimate historic contribution and consent evidence.
 
-1. Read the **immutable v1.0 revision** of [Contributor Agreement](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTOR_AGREEMENT.md), [Governance](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/GOVERNANCE.md), [Contribution Guidelines](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/CONTRIBUTING.md), and [DCO](https://github.com/OpenDKG/.github/blob/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07/DCO.md). Version reference: `d56279b4f3c25dd8f9e68699d61be23a0c7a6b07`.
-2. From the account that will join OpenDKG, [open the membership form](https://github.com/OpenDKG/.github/issues/new?template=membership-agreement.yml) **in OpenDKG/.github** and complete all required consent checkboxes. Pseudonymous public GitHub accounts are allowed.
-3. The membership request is a **public GitHub issue**. Never post legal names, identity documents, emails, tokens, or sensitive information. Do not impersonate another account or submit on somebody else's behalf.
-4. A maintainer reviews the issue; if accepted, an organization owner sends an invitation **after** recording explicit approval. Until then, the applicant has no organization membership or privileged access.
-5. GitHub membership does **not** automatically mean maintainer voting rights. Permission levels are granted separately and the Governance document controls who may approve them. People can contribute via ordinary PRs without organization membership, subject to repository licensing and CLA checks.
+## Boundaries
 
-## For maintainers: manual admission gate
-
-**Do not send invitations before a candidate's own consent.** For the original three cofounders follow the acceptance sequence above; for other applicants use the membership form below. GitHub's standard invitation flow does not natively force a candidate to execute this form before accepting an invite; organization owners can technically bypass this process. Accordingly, use the following operational policy, not a claim of platform enforcement.
-
-1. For an **ordinary, non-founder application**, check the founding adoption record for affirmative acceptance by **all three equal cofounders** of the exact applicable revision. If that is not complete, do not treat the v1.0 agreement as effective.
-2. Confirm the issue was created in **OpenDKG/.github** by the **same GitHub account** seeking access; confirm that all checkbox answers are affirmatively selected and that the agreement version is the pinned revision above. **Issue bodies can be edited**, so record the issue URL, current content and observation time at review. If material consent is ambiguous or was edited, obtain a new unambiguous confirmation from the applicant and preserve the evidence.
-3. Record a maintainer review comment, for example:
-
-   `Membership reviewed: @HANDLE; Agreement v1.0 at d56279b4f3c25dd8f9e68699d61be23a0c7a6b07; original issue #NUMBER; review UTC YYYY-MM-DDTHH:MM:SSZ; approval by @REVIEWER; approved role MEMBER; authorization for invite only. This comment does not certify civil identity or rights ownership.`
-
-4. Obtain the minimum maintainer approvals required by [GOVERNANCE.md](GOVERNANCE.md) for the role/access being granted. In particular, adding owners requires at least two maintainers, per the proposed v1.0 rules.
-5. Only then issue the GitHub invitation. Prefer a normal organization member with **no default write privilege**. Grant per-repository permissions using least privilege; promote to maintain or owner only via the documented governance approval.
-6. Link the membership request and approval to the project's private access ledger (or a public issue index containing **only GitHub handles and publicly posted links**). Preserve the agreement revision, timestamp and author attribution. Retain an export or other separate evidence when stronger proof matters; an editable GitHub Issue alone is not an immutable signed contract.
-7. If a member leaves, promptly remove access and rotate affected credentials. Do **not** delete historic valid licenses or consent evidence. Update the ledger.
-
-## Founders and existing contributors
-
-- The **three original equal cofounders** must each explicitly accept the original governance and Contributor Agreement at the same pinned revision, with a recorded link. The technical owner who created the organization has no extra governance vote or status. Their approval cannot be inferred merely from merging a PR or from existing GitHub membership.
-- Existing OpenDKG members should follow this process before the organization relies on these terms for them.
-- Code submitted **before** adoption needs a separate, traceable permission review; this process does not retroactively license third-party work.
-- Material changes to the Contributor Agreement need **new affirmative acceptance** for the new version before relying on it for new submissions. Previous licenses are not revoked.
-- Do not automatically use this workflow for a non-Apache-2.0 repository: the Contributor Agreement requires additional approval for contributions under a different license.
-
-## Contributors who are not organization members
-
-Open-source pull requests may come from external GitHub users. Requiring an organization membership application from every external PR author is usually unnecessary. Use a dedicated **CLA signing check** and the DCO for those contributions. Follow [CLA_SETUP.md](CLA_SETUP.md) to configure the independent check in **each** applicable repository.
-
-## Legal and technical limitations
-
-A checkbox is evidence of an affirmative action, not proof of civil identity or a universally enforceable electronic signature. GitHub organization owners may invite members without this form and may bypass some technical branch requirements. Policies and permissions must be periodically audited. For more stringent contracts, arrange privately verified identities and legally appropriate signatures, without publishing private documents in GitHub.
+- Membership is not cofounder status, employment, automatic joint copyright ownership or an economic entitlement.
+- Do **not** post legal identity documents, private emails, addresses, authentication tokens or financial details in public issues.
+- External pull request authors generally do not need membership; use the target project's CLA/DCO checks where applicable. See [CLA setup](CLA_SETUP.md).
+- GitHub comments and form checkboxes show an attributable action but are not independently verified legal signatures. When a stronger agreement is necessary, arrange it privately.

@@ -1,56 +1,36 @@
-# OpenDKG — Shared Project Policies
+# OpenDKG — Public Project Policies
 
-This repository contains **organization-wide contribution, governance and licensing guidance** for the volunteer developers collaborating through [OpenDKG](https://github.com/OpenDKG).
+OpenDKG is a small, independent open-source initiative building useful software, connectors, automation, bots and tools that make existing technologies easier to use. DKG, Blackbox and other integrations are optional, where they provide a practical benefit.
 
-**Scope:** Current and future repositories owned by OpenDKG, subject to the published licensing and repository-adoption rules. This `.github` repository is itself a covered repository; third-party and previously licensed material retain their original rights.
+This repository contains **public project-wide policies and contribution guidance**. Internal working drafts, founder finances, meeting notes and planning belong in the **private** `OpenDKG/handbook` repository, not here.
 
-## Documents
+## Essential documents
 
-| File | Purpose |
+| Document | Purpose |
 | --- | --- |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Default contribution guidelines, DCO workflow and review expectations |
-| [CONTRIBUTOR_AGREEMENT.md](CONTRIBUTOR_AGREEMENT.md) | Voluntary contributor copyright/license grant, adoption and pseudonymous acceptance |
-| [DCO.md](DCO.md) | Verbatim Developer Certificate of Origin 1.1 and sign-off instructions |
-| [GOVERNANCE.md](GOVERNANCE.md) | Three-maintainer decisions, succession, project assets and security |
-| [LICENSE](LICENSE) | Apache License 2.0 for this repository's properly licensed materials |
+| [GOVERNANCE.md](GOVERNANCE.md) | Founding governance and project decision rules |
+| [CONTRIBUTOR_AGREEMENT.md](CONTRIBUTOR_AGREEMENT.md) | Contributor rights and permissions |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute code, documentation and tests |
+| [DCO.md](DCO.md) | Developer Certificate of Origin and sign-off text |
+| [MEMBERSHIP.md](MEMBERSHIP.md) | How new non-founder members request access |
+| [LICENSE](LICENSE) | License for the applicable material in this repository |
 
-> **Other repositories need their own `LICENSE` file.** GitHub's `.github` defaults can surface contribution guidelines but do not automatically distribute these policies or grant a license for another repository's code.
+The three original founders (`@a-51-50`, `@dreddster` and `@brxtrac`) recorded their personal acceptance of Governance and Contributor Agreement v1.0 at [the pinned revision](https://github.com/OpenDKG/.github/tree/d56279b4f3c25dd8f9e68699d61be23a0c7a6b07) in [Issue #3](https://github.com/OpenDKG/.github/issues/3). That issue is closed with the `founders:agreement-complete` label. This records GitHub-account declarations; it is not independent legal identity verification or a cross-border legal contract.
 
-## Adoption — not automatic
+## Contributing and joining
 
-These are **proposed model terms until explicitly adopted**. The three founders must separately record their agreement to the initial governance policy, and each contributor must expressly accept the [Contributor Agreement](CONTRIBUTOR_AGREEMENT.md), with a reference to its **exact commit SHA**, before its additional terms can be relied on for that person. Acceptance may be public under a pseudonymous GitHub identity; an alias alone is not identity verification.
+- **Submit a pull request:** Read [CONTRIBUTING.md](CONTRIBUTING.md), check the target repository's own license, and follow its review and CLA/DCO requirements.
+- **Apply to become an organization member:** Follow [MEMBERSHIP.md](MEMBERSHIP.md). Applications are public GitHub issues; never post private identification, contact or financial details.
+- **Configure CLA checks as a maintainer:** See [CLA_SETUP.md](CLA_SETUP.md). This is a technical setup guide, not a replacement for consent or human review.
 
-Use a dedicated GitHub issue or pull request to record each founder's exact acceptance statement and link it as the founding roster. Do not assume a merge, issue reaction, `git commit -s`, or joining the GitHub organization constitutes contractual consent. Past contributions need separate, specific permission where not already properly licensed.
+No repository or contributor automatically gains extra rights through an organizational link. Each project retains its own license and documented maintainer responsibilities.
 
-No company or LLC is created by these documents, and they do not provide automatic personal-liability protection or guarantee legal enforceability in every jurisdiction. Obtain legal review for the actual countries involved before relying on them as contracts.
+## Records and maintenance
 
-### Automated membership validation
+- [Founders' acceptance record](https://github.com/OpenDKG/.github/issues/3)
+- [Membership application form](.github/ISSUE_TEMPLATE/membership-agreement.yml)
+- [Pull request template](.github/PULL_REQUEST_TEMPLATE.md)
 
-The [membership automation guide](MEMBERSHIP_AUTOMATION.md) explains the GitHub Actions intake checker, version-pinned consent receipts, and required human approval **before** an organization invitation. Form validation is not a legal-signature or membership approval. CLA checks for pull requests still require [separate configuration](CLA_SETUP.md).
+GitHub Actions may validate the format of membership acknowledgments and monitor changes to the founding acceptance evidence; they **do not** grant permissions or make legal determinations. Project owners manually approve access.
 
-## Three equal cofounders
-
-OpenDKG was started as a joint effort of **three equal cofounders**. The fact that `@a-51-50` currently holds the initial GitHub Organization Owner role is technical setup, **not** sole-founder or sole-liability status. All three must personally accept the same versioned documents from their own GitHub accounts before the full council operates under this proposed governance. The other two can accept *before* accepting an organizational invitation.
-
-- [Founding acceptance and onboarding](FOUNDER_ONBOARDING.md)
-- [Founding adoption record (Issue #3)](https://github.com/OpenDKG/.github/issues/3)
-- [Automated final verification and Issue closing](FOUNDER_ADOPTION_AUTOMATION.md) — checks the three registered founder accounts; closes Issue #3 only once all three have personally accepted the same version.
-
-Future non-founder members use the separate membership form. No one is automatically promoted to admin/Owner based on a form or comment. Equal cofounder status does not automatically transfer assets or divide statutory liability.
-
-## Joining and signing
-
-OpenDKG uses a **manual pre-invitation membership gate** and a **separate pull-request CLA check**. These processes are not active solely because the templates are published.
-
-- [Membership procedure](MEMBERSHIP.md) — applicant acceptance, founder adoption, reviewer evidence and permission rules.
-- [Membership agreement form](.github/ISSUE_TEMPLATE/membership-agreement.yml) — required acknowledgments referencing a fixed v1.0 policy revision.
-- [CLA Assistant setup](CLA_SETUP.md) — external GitHub authorization and required checks for contributions across covered repositories.
-- [PR template](.github/PULL_REQUEST_TEMPLATE.md) — contributor checklist, not a binding signature.
-
-**Activation requires** adoption by all three founding maintainers and a human owner review before sending invitations. A separate CLA Assistant setup is still needed to gate PR merges.
-
-### Source references
-
-- [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-- [Developer Certificate of Origin 1.1](https://developercertificate.org/)
-- [GitHub default community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
+Changes to already accepted governance or contributor terms require a separately agreed and clearly versioned update. Older accepted documents and GitHub records must not be silently replaced.
