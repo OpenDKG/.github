@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 360" role="img" aria-label="OpenDKG logo"><g transform="translate(10, 0) scale(.45)"><defs>
+<linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#02E1EB"/><stop offset=".36" stop-color="#0FA7F7"/><stop offset=".75" stop-color="#1466F8"/><stop offset="1" stop-color="#13E2E6"/></linearGradient>
+<linearGradient id="ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B2542"/><stop offset="1" stop-color="#030F21"/></linearGradient>
+<linearGradient id="links" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1192FE"/><stop offset=".55" stop-color="#04DFEE"/><stop offset="1" stop-color="#1885F4"/></linearGradient>
+<radialGradient id="node" cx=".35" cy=".24" r=".90"><stop stop-color="#F9FFFF"/><stop offset=".55" stop-color="#D8F9FE"/><stop offset="1" stop-color="#8BD6F9"/></radialGradient>
+<linearGradient id="hub" x1=".1" y1=".05" x2=".75" y2="1"><stop stop-color="#00EAF1"/><stop offset=".55" stop-color="#00B8F2"/><stop offset="1" stop-color="#1160F8"/></linearGradient>
+<filter id="softHalo" x="-.25" y="-.25" width="1.5" height="1.5"><feGaussianBlur stdDeviation="8"/></filter></defs>
+<polygon points="400,59 706,236 706,568 400,747 94,568 94,236" fill="url(#ink)" stroke="url(#frame)" stroke-width="43" stroke-linejoin="round"/>
+<polygon points="400,91 678,251 678,553 400,712 122,553 122,251" fill="none" stroke="#79B5E8" stroke-opacity=".14" stroke-width="7"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M400 215 224 320 224 507 400 610 576 507 576 320Z M400 215V405M224 320 400 405 576 320M224 507 400 405 576 507M400 610V405" stroke="url(#links)" stroke-width="13"/>
+<path d="M400 215 224 320 224 507 400 610 576 507 576 320Z" stroke="#A7F0FC" stroke-opacity=".25" stroke-width="3"/>
+</g>
+<g fill="url(#node)" stroke="#C8F8FF" stroke-opacity=".63" stroke-width="2">
+<circle cx="400" cy="215" r="46"/><circle cx="224" cy="320" r="46"/><circle cx="576" cy="320" r="46"/>
+<circle cx="224" cy="507" r="46"/><circle cx="576" cy="507" r="46"/><circle cx="400" cy="610" r="46"/>
+</g>
+<circle cx="400" cy="405" r="95" fill="#098FEF" opacity=".22" filter="url(#softHalo)"/>
+<circle cx="400" cy="405" r="83" fill="url(#hub)" stroke="#56DBFA" stroke-width="4"/></g><text x="388" y="239" fill="#F4F7FF" font-family="Manrope, Inter, Segoe UI, Arial, sans-serif" font-size="154" font-weight="700" letter-spacing="-5.5">OpenDKG</text></svg>

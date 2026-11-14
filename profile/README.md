@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/opendkg-logo.svg" width="320" alt="OpenDKG logo" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/opendkg-logo-dark.svg" />
+    <img src="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/opendkg-logo.svg" width="380" alt="OpenDKG — open-source knowledge graph organization" />
+  </picture>
 </p>
-
-<h1 align="center">OpenDKG</h1>
 
 <p align="center">
   Independent open-source applications, connectors and tools that make existing technologies easier to use.
