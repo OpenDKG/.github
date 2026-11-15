@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/opendkg-logo-dark.svg" />
-    <img src="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/opendkg-logo.svg" width="380" alt="OpenDKG — open-source knowledge graph organization" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/OpenDKG/.github/main/assets/open-dkg-final.png" width="380" alt="OpenDKG.org logo" />
 </p>
 
 <p align="center">
