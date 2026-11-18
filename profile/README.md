@@ -18,4 +18,6 @@ Projects are announced here when their public documentation is ready. Independen
 
 See our [contribution guidelines](https://github.com/OpenDKG/.github/blob/main/CONTRIBUTING.md), [governance](https://github.com/OpenDKG/.github/blob/main/GOVERNANCE.md), and [membership information](https://github.com/OpenDKG/.github/blob/main/MEMBERSHIP.md).
 
+Support OpenDKG and Axiom with ETH on Ethereum mainnet. [Donate crypto](https://opendkg.org/donate/).
+
 <sub>OpenDKG is independent. Integration with a third-party technology does not imply affiliation, endorsement or joint ownership.</sub>
