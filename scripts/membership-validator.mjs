@@ -18,12 +18,17 @@ export function issueSections(body = "") {
   return sections;
 }
 
-function checkedLines(section) {
-  return [...section.matchAll(/^- \[[xX]\] (.+)$/gm)].map((m) => m[1].trim());
+function normalizeLine(text = "") {
+  return String(text || "").replace(/\s+/g, " ").trim();
 }
 
-function matches(lines, prefix, extra = []) {
-  return lines.some((line) => line.startsWith(prefix) && extra.every((part) => line.includes(part)));
+function checkedLines(section) {
+  return [...section.matchAll(/^- \[[xX]\] (.+)$/gm)].map((m) => normalizeLine(m[1]));
+}
+
+function matches(lines, expected) {
+  const normalizedExpected = normalizeLine(expected);
+  return lines.some((line) => line === normalizedExpected);
 }
 
 /**
@@ -62,33 +67,32 @@ export function validateMembershipIssue(issue) {
     {
       title: "Contributor Agreement v1.0 — explicit acceptance",
       count: 1,
-      must: [{
-        prefix: "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit " + POLICY_SHA,
-        additional: ["existing valid outbound open-source licenses"]
-      }]
+      must: [
+        "I have read and affirmatively accept OpenDKG Contributor Agreement v1.0 at commit " + POLICY_SHA +
+          " for my authorized contributions to present and future Covered Repositories. I understand that existing valid outbound open-source licenses remain effective if I leave."
+      ]
     },
     {
       title: "Governance v1.0 — explicit acceptance",
       count: 1,
-      must: [{
-        prefix: "I have read and accept OpenDKG Governance v1.0 at commit " + POLICY_SHA,
-        additional: ["my requested role", "departure"]
-      }]
+      must: [
+        "I have read and accept OpenDKG Governance v1.0 at commit " + POLICY_SHA +
+          " for my requested role, including contribution review, decision-making, access control, and departure."
+      ]
     },
     {
       title: "Contribution rules and DCO",
       count: 1,
-      must: [{
-        prefix: "I agree to follow the contribution guidelines",
-        additional: ["DCO", "not a substitute"]
-      }]
+      must: [
+        "I agree to follow the contribution guidelines and to certify the right to submit each commit using the DCO sign-off process when contributing. I understand the DCO is not a substitute for the Contributor Agreement."
+      ]
     },
     {
       title: "Authority and public record",
       count: 2,
       must: [
-        { prefix: "To the best of my knowledge, I have or will obtain the rights needed", additional: ["employer"] },
-        { prefix: "I understand this public GitHub issue is an attributable record", additional: ["No private identity verification"] }
+        "To the best of my knowledge, I have or will obtain the rights needed for my contributions, including required employer, client or coauthor permission.",
+        "I understand this public GitHub issue is an attributable record under my GitHub username and that the organization will record the version, date, and acceptance link. No private identity verification is implied."
       ]
     }
   ];
@@ -96,7 +100,7 @@ export function validateMembershipIssue(issue) {
     const content = fields.get(requirement.title);
     const lines = content ? checkedLines(content) : [];
     if (lines.length !== requirement.count ||
-      !requirement.must.every((entry) => matches(lines, entry.prefix, entry.additional))) {
+      !requirement.must.every((entry) => matches(lines, entry))) {
       errors.push("Required checkbox acknowledgment missing or changed: " + requirement.title);
     }
   }

@@ -79,6 +79,16 @@ test("rejects an unrelated issue with copied contents", () => {
   assert.equal(result.valid, false);
 });
 
+test("rejects checkbox lines modified with appended negating text", () => {
+  const tampered = sampleBody.replace(
+    "existing valid outbound open-source licenses remain effective if I leave.",
+    "existing valid outbound open-source licenses remain effective if I leave. However, I grant no license."
+  );
+  const result = validateMembershipIssue(issue(tampered));
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /Contributor Agreement/);
+});
+
 test("rejects duplicate headings that could confuse review", () => {
   const result = validateMembershipIssue(issue(sampleBody + "\n\n### Governance v1.0 — explicit acceptance\n\n- [X] forged"));
   assert.equal(result.valid, false);
