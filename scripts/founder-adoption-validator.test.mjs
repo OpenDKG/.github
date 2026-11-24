@@ -1,8 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import {
   POLICY_COMMIT, DECLARATION, normalizeDeclaration,
-  validateRoster, evaluateFounderAcceptance
+  validateRoster, evaluateFounderAcceptance, CUSTODIAN_USER_ID
 } from "./founder-adoption-validator.mjs";
 
 const configured = {
@@ -107,4 +108,41 @@ test("wrong actor's comment never counts for another founding seat", () => {
   const impostor = { ...comments[1], user: people["founder-three"] };
   const result = evaluateFounderAcceptance(configured, people, [comments[0], impostor]);
   assert.equal(result.complete, false);
+});
+
+test("pinned founder_user_ids succeeds when IDs match and rejects handle-hijack mismatch", () => {
+  const pinnedConfig = {
+    ...configured,
+    founder_user_ids: [51213010, 203, 304]
+  };
+  const ok = evaluateFounderAcceptance(pinnedConfig, people, comments);
+  assert.equal(ok.complete, true);
+  assert.equal(ok.errors.length, 0);
+
+  // Simulate founder-three handle renamed and claimed by attacker with ID 9999
+  const hijackedAccounts = {
+    ...people,
+    "founder-three": { login: "founder-three", id: 9999, type: "User" }
+  };
+  const blocked = evaluateFounderAcceptance(pinnedConfig, hijackedAccounts, comments);
+  assert.equal(blocked.complete, false);
+  assert.ok(blocked.errors.some((e) => e.includes("Pinned user_id mismatch")));
+  assert.deepEqual(blocked.missing, ["founder-three"]);
+});
+
+test("validateRoster rejects invalid, duplicate, or wrong custodian founder_user_ids", () => {
+  assert.equal(CUSTODIAN_USER_ID, 51213010);
+  assert.equal(validateRoster({ ...configured, founder_user_ids: [999, 203, 304] }).ready, false);
+  assert.equal(validateRoster({ ...configured, founder_user_ids: [51213010, 203, 203] }).ready, false);
+  assert.equal(validateRoster({ ...configured, founder_user_ids: [51213010, -1, 304] }).ready, false);
+  assert.equal(validateRoster({ ...configured, founder_user_ids: [51213010, 203] }).ready, false);
+  assert.equal(validateRoster({ ...configured, founder_user_ids: [51213010, 203, null] }).ready, false);
+});
+
+test("checked-in founder-roster.json pins all three verified founder numeric IDs", () => {
+  const raw = JSON.parse(readFileSync(new URL("../.github/founder-roster.json", import.meta.url), "utf8"));
+  const res = validateRoster(raw);
+  assert.equal(res.ready, true);
+  assert.deepEqual(res.errors, []);
+  assert.deepEqual(res.userIds, [51213010, 4760091, 280772190]);
 });

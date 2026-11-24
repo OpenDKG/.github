@@ -17,6 +17,9 @@ if (!configuration.ready) {
   console.log("Two founder account handles are not yet configured; no issue state or labels changed.");
   process.exit(0);
 }
+if (!Array.isArray(configuration.userIds) || configuration.userIds.length !== 3) {
+  throw new Error("Founder roster must pin three immutable numeric founder_user_ids.");
+}
 const token = process.env.GITHUB_TOKEN;
 if (!token) throw new Error("Missing GitHub Actions token.");
 const prefix = "/repos/OpenDKG/.github";
@@ -46,10 +49,14 @@ if (issue.pull_request || !String(issue.body || "").includes("**Exact agreement 
   throw new Error("Founding issue does not reference the expected immutable agreement revision.");
 }
 
-// Resolve each handle to a stable GitHub user ID. No wildcard acceptance.
+// Resolve each founder by immutable numeric GitHub user ID (safe against handle renames/hijacks).
 const accounts = {};
-for (const login of configuration.logins) {
-  accounts[login.toLowerCase()] = await api("GET", "/users/" + encodeURIComponent(login));
+for (let i = 0; i < configuration.logins.length; i += 1) {
+  const login = configuration.logins[i];
+  const userId = configuration.userIds[i];
+  const resolved = await api("GET", "/user/" + encodeURIComponent(String(userId)));
+  accounts[login.toLowerCase()] = resolved;
+  accounts[String(userId)] = resolved;
 }
 const comments = [];
 for (let page = 1; page <= 50; page++) {
