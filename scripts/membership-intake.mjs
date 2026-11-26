@@ -96,6 +96,7 @@ if (!found) {
   if (outcome.valid) {
     lines.push(
       "The required versioned checkbox statements and matching GitHub username are present.",
+      "This is a format check only. Other text in the issue, which the applicant controls, was not examined and could contradict these statements; read the whole issue.",
       "**Next:** A maintainer must independently confirm the request, the three-founder adoption record in issue #3, and any required approval before manually inviting the applicant. GitHub administrators can bypass this procedural gate."
     );
   } else {
